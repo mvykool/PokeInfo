@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeInfo</title>
+    <link rel="stylesheet" href="/custom.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="row d-flex " style="height: 50vh;">
+            <div class="col-12 d-flex justify-content-center align-items-center h-100" style="background-image: url(./img/gif.gif); background-repeat: no-repeat; background-size: cover; background-position: center;">
+
+                <img src="./img/logo.png" alt="" srcset="" class="h-25">
+
+            </div>
+        </header>
+    </main>
+
+    <section>
+        <div class="row section d-flex">
+            <div class="col-12 bg-dark ">
+                <div class=" m-5 mb-2 justify-content-center align-items-center">
+                    <img src="./img/pokeball.png" alt="" style="height: 60px; width: 60px; margin-left: 15%">
+
+                    <h3 class="text-warning text-border pt-1 m-0 h2 d-flex justify-content-center" style="overflow: hidden;">PokeInfo</h3>
+
+                    <p class="text-white text-center mt-4">Mini web que muestra informacion sobre 800+ diferentes pokemones! </p>
+                    <div class="center-form d-flex justify-content-center">
+                        <label for="numero">
+                            <input type="text" id="numero" class="rounded border border-success p-2 border-opacity-10 m-3">
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button onclick="myPoke()" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-warning text-light btn-lg ">Click</button>
+
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+
+                            </div>
+                            <div class="pokemon d-flex justify-content-center">
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal" onclick="window.location.reload()">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--modal-->
+
+                <img src="./img/ultraball.png" " class="mb-4 " alt=" " style="height: 90px; width: 90px; margin-left: 70%; ">
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <footer class=" footer bg-warning p-3 p-md-5 ">
+        <div class="container text-white d-flex justify-content-around row pt-md-5 pe-4 ">
+
+            <div class="col-5 ">
+                <h3 class="h3 ">
+                    More Info
+                </h3>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+            </div>
+
+            <div class=" text-white col-5 ">
+
+                <h3 class="h3 ">
+                    About Us
+                </h3>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+
+            </div>
+
+            <div id="copyright " class="col-2 p-2 ">
+                <h5>PokeInfo: &copy;</h5>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/index.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js " integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js " integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy " crossorigin="anonymous "></script>
+</body>
+
+</html>
